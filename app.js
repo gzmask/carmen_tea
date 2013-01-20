@@ -14,7 +14,7 @@ ss.client.define('main', {
 ss.client.define('index', {
   view: 'index.html',
   css:  ['libs/reset.css', 'style.css'],
-  code: ['libs/jquery.min.js', 'app'],
+  code: ['libs/jquery.min.js', 'app', 'libs/script.js'],
   tmpl: '*'
 });
 
