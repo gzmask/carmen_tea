@@ -39,10 +39,20 @@ body {
     border-radius: 10px
 }
 
+.shadow {
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.7), 
+                        inset 0 -8px 8px -8px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow:    inset 0 8px 8px -8px rgba(0, 0, 0, 0.7),
+                        inset 0 -8px 8px -8px rgba(0, 0, 0, 0.7);
+    box-shadow:         inset 0 8px 8px -8px rgba(0, 0, 0, 0.7),
+                        inset 0 -8px 8px -8px rgba(0, 0, 0, 0.7);
+}
 .nav ul {
     width: 100%;
     height: 100%;
-    margin-left: 12px;
+    margin-left: 50px;
 }
 
 .nav ul li {
@@ -61,10 +71,16 @@ body {
 
 .nav ul li:hover {
     background: #903800;
+    -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
+    -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
+    box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
 }
 
 .active {
     background: #903800;
+    -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
+    -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7);
+    box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
 }
 
 #home, #tea, #accessories, #craft, #ceremony, #about {
@@ -77,6 +93,9 @@ body {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px
+    -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7);
+    box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
 }
 
 .image {
@@ -85,12 +104,15 @@ body {
     float: left;
     margin: 15px 0 0 15px;
     overflow: hidden;
+    display: inline-block;
     background-position: -173px -270px;
     background-repeat: no-repeat;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    display: inline-block;
+    -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    3px 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow:         3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .right_text {

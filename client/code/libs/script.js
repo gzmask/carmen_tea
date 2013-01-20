@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#home, #tea, #accessories, #craft, #ceremony, #about').hide();
+    $('#tea, #accessories, #craft, #ceremony, #about').hide();
 
     $('#home').data('div_bg', 'url(/images/home.jpg)');
     $('#home').data('body_bg', 'url(/images/home_bg.jpg)');
@@ -14,8 +14,20 @@ $(document).ready(function() {
     $('#about').data('div_bg', 'url(/images/about.jpg)');
     $('#about').data('div_bg', 'url(/images/about_bg.jpg)');
 
+    $('.image').css('background-image', $('#home').data('div_bg'));
+    $('body').css('background-image', $('#home').data('body_bg'));
+
+    $('.logo').click(function(e) {
+        e.preventDefault();
+        $('#tea, #accessories, #craft, #ceremony, #about').hide();
+        $('#home').show();
+        $('.image').css('background-image', $('#home').data('div_bg'));
+        $('body').css('background-image', $('#home').data('body_bg'));
+        $('.active').removeClass('active');
+    });
 
     $('.nav a').click(function(e) {
+        $('#home').hide();
         e.preventDefault();
         $($('.active a').attr('href')).hide();
         $('.active').removeClass('active');
