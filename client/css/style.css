@@ -16,11 +16,24 @@ body {
     margin: 60px auto;
 }
 
+.logo {
+    width: 137px;
+    height: 87px;
+    float: left;
+    margin: -15px 0 0 0;
+    background: url(/images/logo.png) center no-repeat;
+}
+
 .nav {
     width: 800px;
-    height: 60px;
+    height: 42px;
     float: right;
     background: rgba(142, 59, 6, 0.7); 
+    background-image: url(/images/nav_bg.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    border-top: 10px solid rgba(203, 135, 56, 0.7);
+    border-bottom: 10px solid rgba(203, 135, 56, 0.7);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px
@@ -42,7 +55,7 @@ body {
     text-decoration: none;
     color: #fff;
     float: left;
-    padding: 22px 18px;
+    padding: 11px 18px;
     font-size: 20px;
 }
 
@@ -59,6 +72,7 @@ body {
     height: 450px;
     margin: 80px 0 0 0;
     position: absolute;
+    overflow: auto;
     background: rgba(255, 255, 255, 0.7);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -71,7 +85,6 @@ body {
     float: left;
     margin: 15px 0 0 15px;
     overflow: hidden;
-    /*background-image: url(/images/home.jpg);*/
     background-position: -173px -270px;
     background-repeat: no-repeat;
     -webkit-border-radius: 5px;
