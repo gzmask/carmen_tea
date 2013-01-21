@@ -3,8 +3,8 @@ $(document).ready(function() {
 
     $('#home').data('div_bg', 'url(/images/home.jpg)');
     $('#home').data('body_bg', 'url(/images/home_bg.jpg)');
-    $('#tea').data('div_bg', 'url(/images/home_bg.jpg)');
-    $('#tea').data('body_bg', 'url(/images/home.jpg)');
+    $('#tea').data('div_bg', 'url(/images/home.jpg)');
+    $('#tea').data('body_bg', 'url(/images/home_bg.jpg)');
     $('#accessories').data('div_bg', 'url(/images/accessories.jpg)');
     $('#accessories').data('div_bg', 'url(/images/accessories_bg.jpg)');
     $('#craft').data('div_bg', 'url(/images/craft.jpg)');
