@@ -3,7 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(/images/home_bg.jpg);
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -20,12 +20,13 @@ body {
     width: 137px;
     height: 87px;
     float: left;
-    margin: -15px 0 0 0;
+    margin: -30px 0 0 0;
+    margin-left: 5px;
     background: url(/images/logo.png) center no-repeat;
 }
 
 .nav {
-    width: 800px;
+    width: 960px;
     height: 42px;
     float: right;
     background: rgba(142, 59, 6, 0.7); 
@@ -76,7 +77,7 @@ body {
     box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
 }
 
-.active {
+.page .active{
     background: #903800;
     -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
     -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7);

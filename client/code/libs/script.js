@@ -3,16 +3,16 @@ $(document).ready(function() {
 
     $('#home').data('div_bg', 'url(/images/home.jpg)');
     $('#home').data('body_bg', 'url(/images/home_bg.jpg)');
-    $('#tea').data('div_bg', 'url(/images/home.jpg)');
-    $('#tea').data('body_bg', 'url(/images/home_bg.jpg)');
-    $('#accessories').data('div_bg', 'url(/images/accessories.jpg)');
-    $('#accessories').data('div_bg', 'url(/images/accessories_bg.jpg)');
-    $('#craft').data('div_bg', 'url(/images/craft.jpg)');
-    $('#craft').data('div_bg', 'url(/images/craft_bg.jpg)');
-    $('#ceremony').data('div_bg', 'url(/images/ceremony.jpg)');
-    $('#ceremony').data('div_bg', 'url(/images/ceremony_bg.jpg)');
-    $('#about').data('div_bg', 'url(/images/about.jpg)');
-    $('#about').data('div_bg', 'url(/images/about_bg.jpg)');
+    $('#tea').data('div_bg', 'url(/images/teas.jpg)');
+    $('#tea').data('body_bg', 'url(/images/teas_bg.jpg)');
+    $('#accessories').data('div_bg', 'url(/images/home.jpg)');
+    $('#accessories').data('body_bg', 'url(/images/home_bg.jpg)');
+    $('#craft').data('div_bg', 'url(/images/home.jpg)');
+    $('#craft').data('body_bg', 'url(/images/home_bg.jpg)');
+    $('#ceremony').data('div_bg', 'url(/images/home.jpg)');
+    $('#ceremony').data('body_bg', 'url(/images/home_bg.jpg)');
+    $('#about').data('div_bg', 'url(/images/home.jpg)');
+    $('#about').data('body_bg', 'url(/images/home_bg.jpg)');
 
     $('.image').css('background-image', $('#home').data('div_bg'));
     $('body').css('background-image', $('#home').data('body_bg'));
