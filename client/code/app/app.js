@@ -1,57 +1,32 @@
-/* QUICK CHAT DEMO */
+$('#tea, #accessories, #craft, #ceremony, #about').hide();
 
-// Delete this file once you've seen how the demo works
+$('#home').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#tea').data('body_bg', 'url(/images/teas_bg.jpg)');
+$('#accessories').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#craft').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#ceremony').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#about').data('body_bg', 'url(/images/home_bg.jpg)');
 
-// Listen out for newMessage events coming from the server
-ss.event.on('newMessage', function(message) {
+$('.image').css('background-image', $('#home').data('div_bg'));
+$('body').css('background-image', $('#home').data('body_bg'));
 
-  // Example of using the Hogan Template in client/templates/chat/message.jade to generate HTML for each message
-  var html = ss.tmpl['chat-message'].render({
-    message: message,
-    time: function() { return timestamp(); }
-  });
-
-  // Append it to the #chatlog div and show effect
-  return $(html).hide().appendTo('#chatlog').slideDown();
+$('.logo').click(function(e) {
+  e.preventDefault();
+  $('#tea, #accessories, #craft, #ceremony, #about').hide();
+  $('#home').show();
+  $('.image').css('background-image', $('#home').data('div_bg'));
+  $('body').css('background-image', $('#home').data('body_bg'));
+  $('.active').removeClass('active');
 });
 
-// Show the chat form and bind to the submit action
-$('#demo').on('submit', function() {
-
-  // Grab the message from the text box
-  var text = $('#myMessage').val();
-
-  // Call the 'send' funtion (below) to ensure it's valid before sending to the server
-  return exports.send(text, function(success) {
-    if (success) {
-      return $('#myMessage').val('');
-    } else {
-      return alert('Oops! Unable to send message');
-    }
-  });
+$('.nav a').click(function(e) {
+  $('#home').hide();
+  e.preventDefault();
+  $($('.active a').attr('href')).hide();
+  $('.active').removeClass('active');
+  section = $(this).attr('href');
+  $(section).show();
+  $('.image').css('background-image', $(section).data('div_bg'));
+  $('body').css('background-image', $(section).data('body_bg'));
+  $(this).parent().addClass('active');
 });
-
-// Demonstrates sharing code between modules by exporting function
-exports.send = function(text, cb) {
-  if (valid(text)) {
-    return ss.rpc('demo.sendMessage', text, cb);
-  } else {
-    return cb(false);
-  }
-};
-
-
-// Private functions
-
-var timestamp = function() {
-  var d = new Date();
-  return d.getHours() + ':' + pad2(d.getMinutes()) + ':' + pad2(d.getSeconds());
-};
-
-var pad2 = function(number) {
-  return (number < 10 ? '0' : '') + number;
-};
-
-var valid = function(text) {
-  return text && text.length > 0;
-};

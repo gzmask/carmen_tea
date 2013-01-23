@@ -4,17 +4,10 @@ var http = require('http'),
     ss = require('socketstream');
 
 // Define a single-page client called 'main'
-ss.client.define('main', {
-  view: 'app.html',
-  css:  ['libs/reset.css', 'app.styl'],
-  code: ['libs/jquery.min.js', 'app'],
-  tmpl: '*'
-});
-
 ss.client.define('index', {
   view: 'index.html',
-  css:  ['libs/reset.css', 'style.css'],
-  code: ['libs/jquery.min.js', 'app', 'libs/script.js'],
+  css:  ['libs/reset.css', 'libs/bootstrap.min.css', 'libs/bootstrap-responsive.min.css', 'style.css'],
+  code: ['libs/jquery.min.js', 'libs/bootstrap.min.js', 'app'],
   tmpl: '*'
 });
 
@@ -34,7 +27,7 @@ ss.client.templateEngine.use(require('ss-hogan'));
 
 // Start web server
 var server = http.Server(ss.http.middleware);
-server.listen(80);
+server.listen(3000);
 
 // Start SocketStream
 ss.start(server);
