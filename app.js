@@ -6,8 +6,8 @@ var http = require('http'),
 // Define a single-page client called 'main'
 ss.client.define('index', {
   view: 'index.html',
-  css:  ['libs/reset.css', 'libs/bootstrap.min.css', 'libs/bootstrap-responsive.min.css', 'style.css'],
-  code: ['libs/jquery.min.js', 'libs/bootstrap.min.js', 'app'],
+  css:  ['libs/reset.css', 'libs/bootstrap.min.css', 'libs/bootstrap-responsive.min.css', 'style.css', 'libs/jquery.lightbox-0.5.css'],
+  code: ['libs/jquery.min.js', 'libs/bootstrap.min.js', 'app', 'libs/jquery.lightbox-0.5.min.js', 'libs/jquery.localscroll-1.2.7.js', 'libs/jquery.scrollTo-1.4.3.1.js'],
   tmpl: '*'
 });
 

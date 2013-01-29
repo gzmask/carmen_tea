@@ -3,10 +3,22 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #e1ecc2;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.gallery {
+
+}
+
+.photo {
+  margin: 12px;
+  width:180px;
+  height:120px;
+  border:2px solid #ffffff;
+  border-radius:5px;
 }
  
 .row {
@@ -21,24 +33,24 @@ body {
 }
 
 .logo {
-    width: 137px;
-    height: 87px;
+    width: 208px;
+    height: 131px;
     float: left;
-    margin: -30px 0 0 0;
+    margin: -60px 0 0 0;
     margin-left: 5px;
     background: url(/images/logo.png) center no-repeat;
 }
 
 .nav {
-    width: 960px;
+    width: 980px;
     height: 42px;
     float: right;
-    background: rgba(142, 59, 6, 0.7); 
+    background: rgba(122, 163, 0, 0.7); 
     background-image: url(/images/nav_bg.png);
     background-repeat: repeat-x;
     background-position: center;
-    border-top: 10px solid rgba(203, 135, 56, 0.7);
-    border-bottom: 10px solid rgba(203, 135, 56, 0.7);
+    border-top: 10px solid rgba(142, 181, 25, 0.7);
+    border-bottom: 10px solid rgba(142, 181, 25, 0.7);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px
@@ -75,14 +87,15 @@ body {
 }
 
 .nav ul li:hover {
-    background: #903800;
+    background: #96bd22;
     -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
     -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
     box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
 }
 
 .page .active{
-    background: #903800;
+    color: #000;
+    background: #96bd22;
     -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
     -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7);
     box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
@@ -96,6 +109,7 @@ body {
     position: absolute;
     overflow: auto;
     background: rgba(255, 255, 255, 0.7);
+    background: rgba(122, 163, 0, 0.7); 
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px

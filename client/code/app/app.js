@@ -1,11 +1,11 @@
 $('#tea, #accessories, #craft, #ceremony, #about').hide();
 
-$('#home').data('body_bg', 'url(/images/home_bg.jpg)');
-$('#tea').data('body_bg', 'url(/images/teas_bg.jpg)');
-$('#accessories').data('body_bg', 'url(/images/home_bg.jpg)');
-$('#craft').data('body_bg', 'url(/images/home_bg.jpg)');
-$('#ceremony').data('body_bg', 'url(/images/home_bg.jpg)');
-$('#about').data('body_bg', 'url(/images/home_bg.jpg)');
+//$('#home').data('body_bg', 'url(/images/home_bg.jpg)');
+//$('#tea').data('body_bg', 'url(/images/home_bg.jpg)');
+//$('#accessories').data('body_bg', 'url(/images/home_bg.jpg)');
+//$('#craft').data('body_bg', 'url(/images/home_bg.jpg)');
+//$('#ceremony').data('body_bg', 'url(/images/home_bg.jpg)');
+//$('#about').data('body_bg', 'url(/images/home_bg.jpg)');
 
 $('.image').css('background-image', $('#home').data('div_bg'));
 $('body').css('background-image', $('#home').data('body_bg'));
