@@ -30,3 +30,16 @@ $('.nav a').click(function(e) {
   $('body').css('background-image', $(section).data('body_bg'));
   $(this).parent().addClass('active');
 });
+
+$('#bt_box').hide();
+$('#dt_box').hide();
+$('#pt_box').hide();
+$('#bt_c').click(function(e) {
+  $('#bt_box').toggle('slow');
+});
+$('#dt_c').click(function(e) {
+  $('#dt_box').toggle('slow');
+});
+$('#pt_c').click(function(e) {
+  $('#pt_box').toggle('slow');
+});

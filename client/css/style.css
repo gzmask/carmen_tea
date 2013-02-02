@@ -42,6 +42,7 @@ body {
 }
 
 .nav {
+    font-family: 'Elsie', cursive;
     width: 980px;
     height: 42px;
     float: right;
@@ -101,6 +102,8 @@ body {
 }
 
 #home, #tea, #accessories, #craft, #ceremony, #about {
+    font-family: 'Elsie', cursive;
+    font-size: 18px;
     width: 960px;
     height: 450px;
     margin: 80px 0 0 0;
@@ -132,7 +135,12 @@ body {
     box-shadow:         3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
+.left_img {
+  width: 600px;
+}
+
 .right_text {
+    font-size: 22px;
     width: 300px;
     height: 320px;
     float: right;
@@ -142,8 +150,17 @@ body {
 
 .bottom_text {
     width: 925px;
-    height: 100px;
     float:left;
     margin: 20px 0 0 15px;
     display: block;
+}
+
+.copyright {
+        margin-top: 80px;
+        border-style: dashed;
+        border-width: 1px;
+        border-color: #fff;
+	text-align:center;
+	color:#642904;
+        font-size:18px;
 }
