@@ -22,7 +22,7 @@ body {
 }
  
 .row {
-    color: #fff;
+    color: #000;
 }
 
 .wrapper {
@@ -157,10 +157,12 @@ body {
 
 .copyright {
         margin-top: 80px;
-        border-style: dashed;
-        border-width: 1px;
-        border-color: #fff;
 	text-align:center;
 	color:#642904;
         font-size:18px;
 }
+
+a:link {color:#642904;}      /* unvisited link */
+a:visited {color:#642904;}  /* visited link */
+a:hover {color:#642904;}  /* mouse over link */
+a:active {color:#642904;}  /* selected link */
