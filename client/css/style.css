@@ -162,6 +162,33 @@ body {
         font-size:18px;
 }
 
+.pt_box_b {
+  background: url(/images/putea_ind.png) center no-repeat;
+  background-position:-8px -35px;
+  padding-top: 18px;
+}
+
+.gt_box_b {
+  background: url(/images/greentea_ind.png) center no-repeat;
+  background-position:-8px -35px;
+  padding-top: 18px;
+}
+
+.rt_box_b {
+  background: url(/images/redtea_ind.png) center no-repeat;
+  background-position:-8px -35px;
+  padding-top: 18px;
+}
+
+.t_box {
+  background-color:#642904;
+  color: #aaa;
+  padding: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px
+}
+
 a:link {color:#642904;}      /* unvisited link */
 a:visited {color:#642904;}  /* visited link */
 a:hover {color:#642904;}  /* mouse over link */
