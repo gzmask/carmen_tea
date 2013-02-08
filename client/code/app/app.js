@@ -34,18 +34,12 @@ $('.nav a').click(function(e) {
 $('#bt_box').hide();
 $('#dt_box').hide();
 $('#pt_box').hide();
-$('#bt_c').click(function(e) {
-  $('#bt_box').toggle('slow');
-  $('#dt_box').hide();
-  $('#pt_box').hide();
+$('#bt_c').hover(function(e) {
+  $('#bt_box').toggle('fast');
 });
-$('#dt_c').click(function(e) {
-  $('#dt_box').toggle('slow');
-  $('#bt_box').hide();
-  $('#pt_box').hide();
+$('#dt_c').hover(function(e) {
+  $('#dt_box').toggle('fast');
 });
-$('#pt_c').click(function(e) {
-  $('#pt_box').toggle('slow');
-  $('#bt_box').hide();
-  $('#dt_box').hide();
+$('#pt_c').hover(function(e) {
+  $('#pt_box').toggle('fast');
 });
