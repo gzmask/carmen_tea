@@ -3,7 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #e1ecc2;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -22,7 +22,7 @@ body {
 }
  
 .row {
-    color: #000;
+    color: #fff;
 }
 
 .wrapper {
@@ -46,12 +46,12 @@ body {
     width: 980px;
     height: 42px;
     float: right;
-    background: rgba(142, 59, 6, 0.7); 
+    background: rgba(122, 163, 0, 0.7); 
     background-image: url(/images/nav_bg.png);
     background-repeat: repeat-x;
     background-position: center;
-    border-top: 10px solid rgba(203, 135, 56, 0.7);
-    border-bottom: 10px solid rgba(203, 135, 56, 0.7);
+    border-top: 10px solid rgba(142, 181, 25, 0.7);
+    border-bottom: 10px solid rgba(142, 181, 25, 0.7);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px
@@ -88,14 +88,14 @@ body {
 }
 
 .nav ul li:hover {
-    background: #903800;
+    background: #577b1a;
     -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
     -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
     box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
 }
 
 .page .active{
-    background: #903800;
+    background: #577b1a;
     -moz-box-shadow:    inset  0px 0px 8px rgba(0, 0, 0, 0.7); 
     -webkit-box-shadow: inset  0px 0px 8px rgba(0, 0, 0, 0.7);
     box-shadow:         inset  0px 0px 8px rgba(0, 0, 0, 0.7);
@@ -110,7 +110,7 @@ body {
     padding: 20px;
     position: absolute;
     overflow: auto;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(122, 163, 0, 0.7);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px
@@ -156,9 +156,9 @@ body {
 }
 
 .copyright {
-        margin-top: 80px;
+        margin-top: 60px;
 	text-align:center;
-	color:#642904;
+	color:#fff;
         font-size:18px;
 }
 
@@ -181,15 +181,15 @@ body {
 }
 
 .t_box {
-  background-color:#642904;
-  color: #aaa;
+  background-color:#456114;
+  color: #fff;
   padding: 15px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px
 }
 
-a:link {color:#642904;}      /* unvisited link */
-a:visited {color:#642904;}  /* visited link */
-a:hover {color:#642904;}  /* mouse over link */
-a:active {color:#642904;}  /* selected link */
+a:link {color:#fff;}      /* unvisited link */
+a:visited {color:#fff;}  /* visited link */
+a:hover {color:#fff;}  /* mouse over link */
+a:active {color:#fff;}  /* selected link */
