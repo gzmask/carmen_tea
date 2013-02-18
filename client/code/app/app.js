@@ -1,5 +1,12 @@
 $('#tea, #accessories, #craft, #ceremony, #about').hide();
 
+$('.gallery a').lightBox({
+  overlayBgColor: '#577b1a',
+  containerResizeSpeed: 150,
+  txtImage: 'Product', 
+  containerBorderSize: 1,
+  overlayOpacity: 0.9
+});
 /*
 $('#home').data('body_bg', 'url(/images/home_bg.jpg)');
 $('#tea').data('body_bg', 'url(/images/home_bg.jpg)');
@@ -33,9 +40,7 @@ $('.nav a').click(function(e) {
   $(this).parent().addClass('active');
 });
 
-$('#bt_box').hide();
-$('#dt_box').hide();
-$('#pt_box').hide();
+$('#bt_box,#dt_box,#pt_box').hide();
 $('#bt_c').hover(function(e) {
   $('#bt_box').toggle('fast');
 });
