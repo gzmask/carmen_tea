@@ -105,8 +105,8 @@ body {
     font-family: 'Elsie', cursive;
     font-size: 18px;
     width: 960px;
-    height: 450px;
-    margin: 80px 0 0 0;
+    height: 70%;           /*min-height hack*/
+    margin: 80px 0 80px 0;
     padding: 20px;
     position: absolute;
     overflow: auto;
@@ -156,7 +156,9 @@ body {
 }
 
 .copyright {
-        margin-top: 60px;
+	position: absolute;
+	bottom: 20px;
+	left: 20%;
 	text-align:center;
 	color:#fff;
         font-size:18px;
