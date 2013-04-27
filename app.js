@@ -27,7 +27,7 @@ ss.client.templateEngine.use(require('ss-hogan'));
 
 // Start web server
 var server = http.Server(ss.http.middleware);
-server.listen(3000);
+server.listen(80);
 
 // Start SocketStream
 ss.start(server);
