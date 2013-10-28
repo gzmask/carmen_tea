@@ -1,33 +1,52 @@
-// My SocketStream 0.3 app
+$('#tea, #accessories, #craft, #ceremony, #about').hide();
 
-var http = require('http'),
-    ss = require('socketstream');
+$('.gallery a').lightBox({
+  overlayBgColor: '#577b1a',
+  containerResizeSpeed: 150,
+  txtImage: 'Product', 
+  containerBorderSize: 1,
+  overlayOpacity: 0.9
+});
+/*
+$('#home').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#tea').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#accessories').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#craft').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#ceremony').data('body_bg', 'url(/images/home_bg.jpg)');
+$('#about').data('body_bg', 'url(/images/home_bg.jpg)');
+*/
 
-// Define a single-page client called 'main'
-ss.client.define('index', {
-  view: 'index.html',
-  css:  ['libs/reset.css', 'libs/bootstrap.min.css', 'libs/bootstrap-responsive.min.css', 'style.css', 'libs/jquery.lightbox-0.5.css'],
-  code: ['libs/jquery.min.js', 'libs/bootstrap.min.js', 'app', 'libs/jquery.lightbox-0.5.min.js', 'libs/jquery.localscroll-1.2.7.js', 'libs/jquery.scrollTo-1.4.3.1.js'],
-  tmpl: '*'
+$('.image').css('background-image', $('#home').data('div_bg'));
+$('body').css('background-image', $('#home').data('body_bg'));
+
+$('.logo').click(function(e) {
+  e.preventDefault();
+  $('#tea, #accessories, #craft, #ceremony, #about').hide();
+  $('#home').show();
+  $('.image').css('background-image', $('#home').data('div_bg'));
+  $('body').css('background-image', $('#home').data('body_bg'));
+  $('.active').removeClass('active');
 });
 
-// Serve this client on the root URL
-ss.http.route('/', function(req, res){
-  res.serveClient('index');
+$('.nav a').click(function(e) {
+  $('#home').hide();
+  e.preventDefault();
+  $($('.active a').attr('href')).hide();
+  $('.active').removeClass('active');
+  section = $(this).attr('href');
+  $(section).show();
+  $('.image').css('background-image', $(section).data('div_bg'));
+  $('body').css('background-image', $(section).data('body_bg'));
+  $(this).parent().addClass('active');
 });
 
-// Code Formatters
-ss.client.formatters.add(require('ss-stylus'));
-
-// Use server-side compiled Hogan (Mustache) templates. Others engines available
-ss.client.templateEngine.use(require('ss-hogan'));
-
-// Minimize and pack assets if you type: SS_ENV=production node app.js
-//if (ss.env === 'production') ss.client.packAssets();
-
-// Start web server
-var server = http.Server(ss.http.middleware);
-server.listen(80);
-
-// Start SocketStream
-ss.start(server);
+$('#bt_box,#dt_box,#pt_box').hide();
+$('#bt_c').hover(function(e) {
+  $('#bt_box').toggle('fast');
+});
+$('#dt_c').hover(function(e) {
+  $('#dt_box').toggle('fast');
+});
+$('#pt_c').hover(function(e) {
+  $('#pt_box').toggle('fast');
+});
